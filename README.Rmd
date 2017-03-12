@@ -21,9 +21,6 @@ library("plyr")
 library("dplyr")
 library("sqldf")
 
-```
-
-
 OS <-.Platform$OS.type
 dataSetNm <- "initDataSet.zip"
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
@@ -33,6 +30,7 @@ if(OS == "unix"){
   download.file(fileUrl, dataSetNm)
 }
 unzip(dataSetNm)
+```
 
 ## 2. Data Cleaning
 **Realted assignment requirements**
